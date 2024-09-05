@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(38, 252, 56, 0.466);
+        }
+        header {
+            background-color: rgb(245, 245, 245); 
+            border: 10px solid rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+                           
+        }
+
+        h1 { text-align: center;
+        }
+        
+        nav {
+            background-color: black;
+            padding: 4px;
+            text-align: center;
+            box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.363)
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 100px;
+                       
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+                                         
+        }
+        
+        main {
+            background-color: rgb(245, 245, 245);
+            padding: 10px;
+            margin: 10px;
+            border-radius: -9px;
+            box-shadow: 3px 1px 3px rgba(255, 0, 0, 0.363)
+
+        }
+
+        article > aside {
+            background-color: rgb(190, 201, 199);
+            text-align: end;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 9px;
+            border-radius: 360px;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Tabela</a>
+            <a href="#">Premios</a>
+            <a href="#">Sorteios</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes</h2>
+            <article>
+                <h3>Brasileirão Serie A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus iusto atque consectetur in, dolorum totam dolor. Vel, eaque qui magni tenetur, non corporis corrupti ipsum facere, debitis laudantium voluptatibus nisi.</p>
+                <h3>Brasileirão Serie B</h3>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus voluptate ut? Voluptates harum recusandae iusto in, quia voluptatem beatae blanditiis. Repellendus veritatis voluptas, iste corrupti optio exercitationem nihil suscipit?</p>
+                <aside>
+                    <p>Escrito por Alphabet as 13:05pm</p>
+                </aside>
+            </article>
+        </section>
+        <section id="assuntos"> 
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vero rerum corporis vitae qui in odio voluptatum eos minima. Nostrum accusamus eaque velit. Vero dolor officia harum asperiores minus nostrum.</p>
+                <aside>
+                    <p>Escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcelo Holanda</p>
+    </footer>
+
+</body>
+</html>
