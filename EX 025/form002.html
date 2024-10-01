@@ -13,16 +13,20 @@
 <body>
     <h1>Formulario</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
-           <label for="iusu">Usuário:</label>
-           <input type="text" name="usu" id="iusu" required minlength="5"
-           maxlength="12" size="25" placeholder="nome do usuario" autocomplete="username"> 
-        <p>
-        <p>
-            <label for="isen">Senha:</label>
-           <input type="text" name="sen" id="isen" required minlength="6"
-           maxlength="12" size="25" placeholder="minimo 6 letras" autocomplete="current-password"> 
-        <p>
+        <fieldset>
+            <p>
+               <label for="iusu">Usuário:</label>
+               <input type="text" name="usu" id="iusu" required minlength="5"
+               maxlength="12" size="25" placeholder="nome do usuario" autocomplete="username">
+            <p>
+            <p>
+                <label for="isen">Senha:</label>
+               <input type="text" name="sen" id="isen" required minlength="6"
+               maxlength="12" size="25" placeholder="minimo 6 letras" autocomplete="current-password">
+            <p>
+            <input type="checkbox" name="" id="">
+
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
