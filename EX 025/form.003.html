@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Data</title>
+</head>
+<body>
+    <h1>Exemplo de Calculo Data</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="data1">Inicio em:</label>
+            <input type="date" name="data" id="data1" min="01/01/1900" max="01/01/2200" required oninput="calcVigencia()">
+        </p>
+        <p>
+            <label for="number1">Quantidade de Meses:</label>
+            <input type="number" name="number" id="number1" min="0" max="99">
+        </p>
+
+        <p>
+            <label for="Vigencia">Data Fim:</label>
+            <output id="Vigencia">01/01/2024</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <script>
+            function calcVigencia() {
+            let atual = new Date().getFullYear()
+            Vigencia.innerHTML = Date(atual) + Number(number1.value)
+            }
+        </script>
+
+
+    </form>
+</body>
+</html>
